@@ -1,0 +1,20 @@
+{
+  "scripts": {
+    "clean": "bazel clean --expunge && rm -rf node_modules",
+    "postinstall": "patch-package",
+    "generatechange": "echo 'export const time = '$(date +%s) > packages/lib/src/time.ts",
+    "build": "bazel build packages/lib",
+    "build:local": "yarn build && yarn generatechange && yarn build",
+    "build:sandbox": "yarn build --worker_sandboxing && yarn generatechange && yarn build --worker_sandboxing && yarn generatechange && yarn build --worker_sandboxing"
+  },
+  "dependencies": {
+    "fp-ts": "2.10.5"
+  },
+  "devDependencies": {
+    "@bazel/bazelisk": "1.7.3",
+    "@bazel/typescript": "3.4.2",
+    "patch-package": "6.4.7",
+    "typescript": "4.2.4"
+  },
+  "license": "MIT"
+}

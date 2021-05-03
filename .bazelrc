@@ -1,0 +1,8 @@
+# Artifacts are typically placed in a directory called "dist"
+# Be aware that this setup will still create a bazel-out symlink in
+# your project directory, which you must exclude from version control and your
+# editor's search path.
+build --symlink_prefix=dist/
+
+# enable verbose build errors output
+build --worker_verbose --verbose_failures --define=VERBOSE_LOGS=1
