@@ -2,10 +2,14 @@
   "scripts": {
     "clean": "bazel clean --expunge && rm -rf node_modules",
     "postinstall": "patch-package",
-    "generatechange": "echo 'export const time = '$(date +%s) > packages/lib/src/time.ts",
+    "generatechange:foo": "echo 'export const fooTime = '$(date +%s) > packages/lib/src/foo.ts",
+    "generatechange:bar": "echo 'export const barTime = '$(date +%s) > packages/lib/src/bar.ts",
+    "generatechange": "yarn generatechange:foo && yarn generatechange:bar",
     "build": "bazel build packages/lib",
     "build:local": "yarn build && yarn generatechange && yarn build",
-    "build:sandbox": "yarn build --worker_sandboxing && yarn generatechange && yarn build --worker_sandboxing && yarn generatechange && yarn build --worker_sandboxing"
+    "build:local-partial": "yarn build && yarn generatechange:foo && yarn build",
+    "build:sandbox": "yarn build --worker_sandboxing && yarn generatechange && yarn build --worker_sandboxing && yarn generatechange && yarn build --worker_sandboxing",
+    "build:sandbox-partial": "yarn build --worker_sandboxing && yarn generatechange:foo && yarn build --worker_sandboxing"
   },
   "dependencies": {
     "fp-ts": "2.10.5"
