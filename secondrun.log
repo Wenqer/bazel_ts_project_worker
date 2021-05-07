@@ -1,0 +1,576 @@
+yarn run v1.22.10
+$ yarn build && yarn generatechange && yarn build
+$ bazel build packages/lib
+Loading: 
+Loading: 0 packages loaded
+Analyzing: target //packages/lib:lib (0 packages loaded, 0 targets configured)
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/base64:base64__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/base64:base64__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/base64:base64__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/pool:pool__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/pool:pool__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/pool:pool__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/codegen:codegen__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/codegen:codegen__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/codegen:codegen__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//tsutils:tsutils__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//tsutils:tsutils__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//tsutils:tsutils__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//buffer-from:buffer-from__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//buffer-from:buffer-from__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//buffer-from:buffer-from__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@types/long:long__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@types/long:long__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@types/long:long__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//source-map:source-map__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//source-map:source-map__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//source-map:source-map__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//source-map-support:source-map-support__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//source-map-support:source-map-support__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//source-map-support:source-map-support__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/fetch:fetch__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/fetch:fetch__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/fetch:fetch__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/eventemitter:eventemitter__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/eventemitter:eventemitter__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/eventemitter:eventemitter__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/path:path__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/path:path__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/path:path__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@bazel/typescript:typescript__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@bazel/typescript:typescript__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@bazel/typescript:typescript__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/inquire:inquire__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/inquire:inquire__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/inquire:inquire__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/float:float__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/float:float__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/float:float__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/utf8:utf8__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/utf8:utf8__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/utf8:utf8__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/aspromise:aspromise__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/aspromise:aspromise__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/aspromise:aspromise__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//long:long__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//long:long__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//long:long__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//protobufjs:protobufjs__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//protobufjs:protobufjs__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//protobufjs:protobufjs__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@types/node:node__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@types/node:node__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@types/node:node__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//tslib:tslib__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//tslib:tslib__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//tslib:tslib__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//typescript:typescript__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//typescript:typescript__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//typescript:typescript__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@bazel/typescript:typescript
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@bazel/typescript/internal/worker:filegroup: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@bazel/typescript/internal/worker:filegroup
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//typescript:typescript
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//typescript:typescript__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//typescript:typescript__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//typescript:typescript__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//typescript:typescript: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@types/node:node__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@types/node:node__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@types/node:node__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/aspromise:aspromise__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/aspromise:aspromise__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/aspromise:aspromise__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//long:long__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//long:long__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//long:long__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@bazel/typescript:typescript__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@bazel/typescript:typescript__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@bazel/typescript:typescript__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/utf8:utf8__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/utf8:utf8__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/utf8:utf8__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/eventemitter:eventemitter__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/eventemitter:eventemitter__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/eventemitter:eventemitter__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/path:path__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/path:path__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/path:path__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//source-map-support:source-map-support__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//source-map-support:source-map-support__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//source-map-support:source-map-support__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/codegen:codegen__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/codegen:codegen__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/codegen:codegen__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@types/long:long__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@types/long:long__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@types/long:long__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//protobufjs:protobufjs__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//protobufjs:protobufjs__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//protobufjs:protobufjs__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/float:float__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/float:float__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/float:float__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//buffer-from:buffer-from__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//buffer-from:buffer-from__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//buffer-from:buffer-from__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//source-map:source-map__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//source-map:source-map__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//source-map:source-map__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/inquire:inquire__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/inquire:inquire__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/inquire:inquire__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/base64:base64__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/base64:base64__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/base64:base64__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/fetch:fetch__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/fetch:fetch__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/fetch:fetch__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/pool:pool__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/pool:pool__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/pool:pool__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//tsutils:tsutils__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//tsutils:tsutils__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//tsutils:tsutils__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//tslib:tslib__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//tslib:tslib__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//tslib:tslib__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@bazel/typescript:typescript: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//fp-ts:fp-ts__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//fp-ts:fp-ts__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//fp-ts:fp-ts__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//fp-ts:fp-ts
+INFO: Analyzed target //packages/lib:lib (1 packages loaded, 4 targets configured).
+INFO: Found 1 target...
+[0 / 1] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+Target //packages/lib:lib up-to-date:
+  dist/bin/packages/lib/build/src/index.js
+  dist/bin/packages/lib/build/src/time.js
+INFO: Elapsed time: 0.914s, Critical Path: 0.09s
+INFO: 2 processes: 2 internal.
+INFO: Build completed successfully, 2 total actions
+INFO: Build completed successfully, 2 total actions
+$ echo 'export const time = '$(date +%s) > packages/lib/src/time.ts
+$ bazel build packages/lib
+Loading: 
+Loading: 0 packages loaded
+Analyzing: target //packages/lib:lib (0 packages loaded, 0 targets configured)
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/base64:base64__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/base64:base64__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/base64:base64__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/pool:pool__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/pool:pool__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/pool:pool__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/codegen:codegen__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/codegen:codegen__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/codegen:codegen__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//tsutils:tsutils__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//tsutils:tsutils__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//tsutils:tsutils__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//buffer-from:buffer-from__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//buffer-from:buffer-from__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//buffer-from:buffer-from__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@types/long:long__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@types/long:long__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@types/long:long__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//source-map:source-map__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//source-map:source-map__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//source-map:source-map__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//source-map-support:source-map-support__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//source-map-support:source-map-support__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//source-map-support:source-map-support__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/fetch:fetch__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/fetch:fetch__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/fetch:fetch__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/eventemitter:eventemitter__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/eventemitter:eventemitter__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/eventemitter:eventemitter__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/path:path__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/path:path__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/path:path__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@bazel/typescript:typescript__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@bazel/typescript:typescript__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@bazel/typescript:typescript__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/inquire:inquire__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/inquire:inquire__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/inquire:inquire__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/float:float__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/float:float__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/float:float__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/utf8:utf8__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/utf8:utf8__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/utf8:utf8__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/aspromise:aspromise__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/aspromise:aspromise__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@protobufjs/aspromise:aspromise__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//long:long__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//long:long__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//long:long__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//protobufjs:protobufjs__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//protobufjs:protobufjs__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//protobufjs:protobufjs__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@types/node:node__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@types/node:node__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@types/node:node__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//tslib:tslib__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//tslib:tslib__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//tslib:tslib__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//typescript:typescript__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//typescript:typescript__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//typescript:typescript__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@bazel/typescript:typescript
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@bazel/typescript/internal/worker:filegroup: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//@bazel/typescript/internal/worker:filegroup
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//typescript:typescript
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//typescript:typescript__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//typescript:typescript__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//typescript:typescript__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//typescript:typescript: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@types/node:node__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@types/node:node__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@types/node:node__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/aspromise:aspromise__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/aspromise:aspromise__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/aspromise:aspromise__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//long:long__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//long:long__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//long:long__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@bazel/typescript:typescript__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@bazel/typescript:typescript__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@bazel/typescript:typescript__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/utf8:utf8__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/utf8:utf8__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/utf8:utf8__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/eventemitter:eventemitter__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/eventemitter:eventemitter__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/eventemitter:eventemitter__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/path:path__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/path:path__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/path:path__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//source-map-support:source-map-support__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//source-map-support:source-map-support__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//source-map-support:source-map-support__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/codegen:codegen__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/codegen:codegen__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/codegen:codegen__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@types/long:long__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@types/long:long__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@types/long:long__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//protobufjs:protobufjs__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//protobufjs:protobufjs__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//protobufjs:protobufjs__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/float:float__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/float:float__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/float:float__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//buffer-from:buffer-from__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//buffer-from:buffer-from__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//buffer-from:buffer-from__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//source-map:source-map__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//source-map:source-map__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//source-map:source-map__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/inquire:inquire__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/inquire:inquire__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/inquire:inquire__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/base64:base64__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/base64:base64__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/base64:base64__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/fetch:fetch__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/fetch:fetch__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/fetch:fetch__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/pool:pool__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/pool:pool__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@protobufjs/pool:pool__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//tsutils:tsutils__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//tsutils:tsutils__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//tsutils:tsutils__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//tslib:tslib__nested_node_modules: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//tslib:tslib__files: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//tslib:tslib__contents: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/common/module_mappings.bzl:41:14: [module_mappings.bzl] Mappings at @npm//@bazel/typescript:typescript: {}
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//fp-ts:fp-ts__nested_node_modules
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//fp-ts:fp-ts__files
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//fp-ts:fp-ts__contents
+DEBUG: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/external/build_bazel_rules_nodejs/internal/linker/link_node_modules.bzl:19:14: [link_node_modules.bzl] No LinkablePackageInfo for @npm//fp-ts:fp-ts
+INFO: Analyzed target //packages/lib:lib (1 packages loaded, 4 targets configured).
+INFO: Found 1 target...
+[0 / 1] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: From Compiling TypeScript project (worker mode) //packages/lib:lib [tsc -p packages/lib/tsconfig_lib.json]:
+FileWatcher:: Triggered with /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/execroot/bazel_ts_project_worker/packages/lib/src/time.ts 1:: WatchInfo: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/execroot/bazel_ts_project_worker/packages/lib/src/time.ts 250 undefined Source file
+
+Scheduling update
+
+Elapsed:: 0.027263015508651733ms FileWatcher:: Triggered with /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/execroot/bazel_ts_project_worker/packages/lib/src/time.ts 1:: WatchInfo: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/execroot/bazel_ts_project_worker/packages/lib/src/time.ts 250 undefined Source file
+
+=== Handling new build request
+Compiling with:
+	--project
+	bazel-out/darwin-fastbuild/bin/packages/lib/tsconfig_lib.json
+	--outDir
+	bazel-out/darwin-fastbuild/bin/packages/lib/build
+	--rootDir
+	packages/lib
+	--declarationDir
+	bazel-out/darwin-fastbuild/bin/packages/lib/build
+	--listFiles
+	--listEmittedFiles
+	--traceResolution
+	--diagnostics
+	--extendedDiagnostics
+message TS6032: File change detected. Starting incremental compilation...
+
+Synchronizing program
+
+CreatingProgramWith::
+
+  roots: ["/private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/execroot/bazel_ts_project_worker/packages/lib/src/index.ts","/private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/execroot/bazel_ts_project_worker/packages/lib/src/time.ts"]
+
+  options: {"declaration":true,"lib":["lib.es5.d.ts"],"skipLibCheck":true,"types":[],"noEmitOnError":true,"sourceMap":false,"declarationMap":false,"emitDeclarationOnly":false,"allowJs":false,"project":"bazel-out/darwin-fastbuild/bin/packages/lib/tsconfig_lib.json","outDir":"bazel-out/darwin-fastbuild/bin/packages/lib/build","rootDir":"packages/lib","declarationDir":"bazel-out/darwin-fastbuild/bin/packages/lib/build","listFiles":true,"listEmittedFiles":true,"traceResolution":true,"diagnostics":true,"extendedDiagnostics":true,"configFilePath":"/private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/execroot/bazel_ts_project_worker/bazel-out/darwin-fastbuild/bin/packages/lib/tsconfig_lib.json"}
+
+TSFILE: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/execroot/bazel_ts_project_worker/bazel-out/darwin-fastbuild/bin/packages/lib/build/src/time.js
+
+TSFILE: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/execroot/bazel_ts_project_worker/bazel-out/darwin-fastbuild/bin/packages/lib/build/src/time.d.ts
+
+TSFILE: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/execroot/bazel_ts_project_worker/bazel-out/darwin-fastbuild/bin/packages/lib/build/src/index.js
+
+TSFILE: /private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/execroot/bazel_ts_project_worker/bazel-out/darwin-fastbuild/bin/packages/lib/build/src/index.d.ts
+
+/private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/execroot/bazel_ts_project_worker/external/npm/node_modules/typescript/lib/lib.es5.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/JoinSemilattice.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/BoundedJoinSemilattice.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/MeetSemilattice.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/BoundedMeetSemilattice.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/BoundedLattice.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Lattice.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/HKT.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Contravariant.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Bounded.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Functor.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Magma.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Semigroup.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Apply.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Pointed.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Applicative.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Bifunctor.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Chain.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/ChainRec.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Extend.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Alternative.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Monad.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Foldable.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/MonadThrow.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Separated.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Show.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Traversable.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Witherable.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Option.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Filterable.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/FromEither.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Either.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Compactable.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/FunctorWithIndex.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/FilterableWithIndex.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/FoldableWithIndex.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/TraversableWithIndex.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Unfoldable.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/ReadonlyRecord.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Monoid.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Eq.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Ordering.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Ord.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/DistributiveLattice.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/BoundedDistributiveLattice.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/HeytingAlgebra.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/BooleanAlgebra.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Semiring.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Ring.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/function.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Alt.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Comonad.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/ReadonlyNonEmptyArray.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/NonEmptyArray.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Array.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/boolean.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Semigroupoid.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Category.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Profunctor.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Choice.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/FromIO.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/MonadIO.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/IO.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Console.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Const.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Date.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/EitherT.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Field.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/MonadTask.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Task.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/FromTask.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Group.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Identity.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Invariant.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/IOEither.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/IORef.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Json.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Map.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/number.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/OptionT.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/pipeable.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Random.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Strong.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Reader.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/ReaderEither.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/ReaderT.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/ReaderTask.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/TaskEither.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/ReaderTaskEither.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/ReadonlyArray.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/ReadonlyMap.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/ReadonlySet.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/ReadonlyTuple.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Record.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Set.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/State.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/StateReaderTaskEither.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/StateT.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Store.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/string.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/struct.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/TaskOption.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/These.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/TaskThese.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/TheseT.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Traced.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Tree.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Tuple.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/ValidationT.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/Writer.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/WriterT.d.ts
+
+/Users/wenqer/www/bazel_ts_project_worker/node_modules/fp-ts/lib/index.d.ts
+
+/private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/execroot/bazel_ts_project_worker/packages/lib/src/time.ts
+
+/private/var/tmp/_bazel_wenqer/5d6c27e972ac51e406954ce181bfe7b4/execroot/bazel_ts_project_worker/packages/lib/src/index.ts
+
+message TS6194: Found 0 errors. Watching for file changes.
+
+Synchronizing program
+
+Target //packages/lib:lib up-to-date:
+  dist/bin/packages/lib/build/src/index.js
+  dist/bin/packages/lib/build/src/time.js
+INFO: Elapsed time: 0.498s, Critical Path: 0.14s
+INFO: 3 processes: 2 internal, 1 worker.
+INFO: Build completed successfully, 3 total actions
+INFO: Build completed successfully, 3 total actions
+Done in 2.81s.

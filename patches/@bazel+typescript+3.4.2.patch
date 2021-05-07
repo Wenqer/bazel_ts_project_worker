@@ -1,8 +1,27 @@
 diff --git a/node_modules/@bazel/typescript/internal/ts_project.bzl b/node_modules/@bazel/typescript/internal/ts_project.bzl
-index ee340fe..34c325e 100755
+index ee340fe..3106276 100755
 --- a/node_modules/@bazel/typescript/internal/ts_project.bzl
 +++ b/node_modules/@bazel/typescript/internal/ts_project.bzl
-@@ -665,6 +665,8 @@ def ts_project_macro(
+@@ -186,11 +186,17 @@ def _ts_project_impl(ctx):
+     typings_outputs = ctx.outputs.typings_outs + ctx.outputs.typing_maps_outs + [s for s in ctx.files.srcs if s.path.endswith(".d.ts")]
+     default_outputs_depset = depset(runtime_outputs) if len(runtime_outputs) else depset(typings_outputs)
+ 
++    args = [
++        "--nobazel_run_linker",
++        "--nobazel_patch_module_resolver",
++        arguments,
++    ] if ctx.attr.supports_workers else [arguments]
++
+     if len(outputs) > 0:
+         run_node(
+             ctx,
+             inputs = inputs,
+-            arguments = [arguments],
++            arguments = args,
+             outputs = outputs,
+             mnemonic = "TsProject",
+             executable = "tsc",
+@@ -665,6 +671,8 @@ def ts_project_macro(
                  Label(typescript_package),
                  Label("//@bazel/typescript"),
                  tsconfig,
@@ -12,10 +31,18 @@ index ee340fe..34c325e 100755
              entry_point = Label("//@bazel/typescript/internal/worker:index.js"),
              templated_args = [
 diff --git a/node_modules/@bazel/typescript/internal/worker/index.js b/node_modules/@bazel/typescript/internal/worker/index.js
-index 08bf866..5b9673e 100755
+index 08bf866..bc73895 100755
 --- a/node_modules/@bazel/typescript/internal/worker/index.js
 +++ b/node_modules/@bazel/typescript/internal/worker/index.js
-@@ -26,7 +26,7 @@ const reportWatchStatusChanged = (diagnostic) => {
+@@ -10,6 +10,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
+ };
+ Object.defineProperty(exports, "__esModule", { value: true });
+ const fs = require("fs");
++const path = require("path");
+ const ts = require("typescript");
+ const MNEMONIC = 'TsProject';
+ const worker = require('./worker');
+@@ -26,7 +27,7 @@ const reportWatchStatusChanged = (diagnostic) => {
      worker.debug(ts.formatDiagnostic(diagnostic, formatHost));
  };
  function createWatchProgram(options, tsconfigPath, setTimeout) {
@@ -24,6 +51,26 @@ index 08bf866..5b9673e 100755
      return ts.createWatchProgram(host);
  }
  let workerRequestTimestamp;
+@@ -82,6 +83,19 @@ function main() {
+     }
+     if (process.argv.includes('--persistent_worker')) {
+         worker.log(`Running ${MNEMONIC} as a Bazel worker`);
++        // Here we create a symlink to the node_module folder
++        // in a place which Bazel does not clean before each run - output_base.
++        // We can not use the workspace folder for it, because Bazel completely cleans it before each build.
++        // And even if we restore symlink manually, TS watch mode detect it as changes in all node_modules
++        // and will reresolve and recompile all of them which creates significant overhead in build time.
++        var target = path.join(process.cwd(), '../../external/npm/node_modules');
++        var into = path.join(process.cwd(), '../../node_modules');
++        worker.log('link node_modules from', target, 'to', into);
++        try {
++          fs.symlinkSync(target, into, 'junction');
++        } catch (e) {
++          worker.log('link creation failed', e.toString());
++        }
+         worker.runWorkerLoop(emitOnce);
+     }
+     else {
 diff --git a/node_modules/@bazel/typescript/internal/worker/worker.js b/node_modules/@bazel/typescript/internal/worker/worker.js
 index d6e188a..97d1da7 100755
 --- a/node_modules/@bazel/typescript/internal/worker/worker.js
