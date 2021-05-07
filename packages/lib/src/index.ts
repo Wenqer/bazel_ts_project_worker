@@ -1,4 +1,5 @@
 import { function as fn } from 'fp-ts'
-import { time } from './time'
+import { fooTime } from './foo'
+import { barTime } from './bar'
 
-export const variable = fn.identity(time)
+export const variable = fn.identity(fooTime + barTime)
