@@ -12,18 +12,55 @@ index ee340fe..34c325e 100755
              entry_point = Label("//@bazel/typescript/internal/worker:index.js"),
              templated_args = [
 diff --git a/node_modules/@bazel/typescript/internal/worker/index.js b/node_modules/@bazel/typescript/internal/worker/index.js
-index 08bf866..5b9673e 100755
+index 08bf866..d6e1842 100755
 --- a/node_modules/@bazel/typescript/internal/worker/index.js
 +++ b/node_modules/@bazel/typescript/internal/worker/index.js
-@@ -26,7 +26,7 @@ const reportWatchStatusChanged = (diagnostic) => {
+@@ -14,6 +14,7 @@ const ts = require("typescript");
+ const MNEMONIC = 'TsProject';
+ const worker = require('./worker');
+ let createWatchCompilerHost;
++const filesCache = new Map();
+ const formatHost = {
+     getCanonicalFileName: (path) => path,
+     getCurrentDirectory: ts.sys.getCurrentDirectory,
+@@ -26,7 +27,15 @@ const reportWatchStatusChanged = (diagnostic) => {
      worker.debug(ts.formatDiagnostic(diagnostic, formatHost));
  };
  function createWatchProgram(options, tsconfigPath, setTimeout) {
 -    const host = createWatchCompilerHost(tsconfigPath, options, Object.assign(Object.assign({}, ts.sys), { setTimeout }), ts.createEmitAndSemanticDiagnosticsBuilderProgram, reportDiagnostic, reportWatchStatusChanged);
-+    const host = createWatchCompilerHost(tsconfigPath, options, Object.assign(Object.assign({}, ts.sys), { setTimeout, /* override ts writing into stdout to allow use --define=VERBOSE_LOGS=1 in worker mode */ write: worker.debug }), ts.createEmitAndSemanticDiagnosticsBuilderProgram, reportDiagnostic, reportWatchStatusChanged);
++    const host = createWatchCompilerHost(tsconfigPath, options, Object.assign(Object.assign({}, ts.sys), { setTimeout, write: worker.debug,
++        writeFile: (filename, ...args) => {
++            ts.sys.writeFile(filename, ...args);
++            // here we collect all output from Typescript into FS to the memory cache
++            // we need it to restore correct FS state between Bazel runs.
++            worker.debug('update files cache with: ', filename);
++            filesCache.set(filename, args);
++        }
++    }), ts.createEmitAndSemanticDiagnosticsBuilderProgram, reportDiagnostic, reportWatchStatusChanged);
      return ts.createWatchProgram(host);
  }
  let workerRequestTimestamp;
+@@ -53,10 +62,19 @@ function getWatchProgram(args) {
+ function emitOnce(args) {
+     return __awaiter(this, void 0, void 0, function* () {
+         const watchProgram = getWatchProgram(args);
++        workerRequestTimestamp = Date.now();
+         if (consolidateChangesCallback) {
++            // consolidateChangesCallback is defined only when the build triggers a "warm" worker.
++            // In "warm" state TypeScript will emit only changed files,
++            // and, since Bazel clean package output folder for each build,
++            // we need to restore the File System state to what TypeScript expects to see.
++            // To do it we take all files that we previously cache in the filesCache
++            // and rewrite them using TS API.
++            // TODO: it may be more efficient to do the same thing by passing custom ts.CreateProgram factory in the createWatchProgram.
++            filesCache.forEach((args, filename) =>  ts.sys.writeFile(filename, ...args));
++            worker.debug('file restore finished in: ', Date.now() - workerRequestTimestamp, 'ms');
+             consolidateChangesCallback();
+         }
+-        workerRequestTimestamp = Date.now();
+         const result = yield (watchProgram === null || watchProgram === void 0 ? void 0 : watchProgram.getProgram().emit(undefined, undefined, {
+             isCancellationRequested: function (timestamp) {
+                 return timestamp !== workerRequestTimestamp;
 diff --git a/node_modules/@bazel/typescript/internal/worker/worker.js b/node_modules/@bazel/typescript/internal/worker/worker.js
 index d6e188a..97d1da7 100755
 --- a/node_modules/@bazel/typescript/internal/worker/worker.js
