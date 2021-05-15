@@ -1,0 +1,5 @@
+{
+  "name": "@monorepo/lib",
+  "main": "build/index",
+  "typings": "build/index.d.ts"
+}
