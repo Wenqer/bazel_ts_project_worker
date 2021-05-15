@@ -1,0 +1,13 @@
+diff --git internal/node/launcher.sh internal/node/launcher.sh
+index 6aa67c17..b4fe4cd3 100644
+--- internal/node/launcher.sh
++++ internal/node/launcher.sh
+@@ -220,7 +220,7 @@ if [ "$RUN_LINKER" = true ]; then
+   # For programs which are called with bazel run or bazel test, there will be no additional runtime
+   # dependencies to link, so we use the default modules_manifest which has only the static dependencies
+   # of the binary itself.
+-  MODULES_MANIFEST=${MODULES_MANIFEST:-$(rlocation "TEMPLATED_modules_manifest")}
++  export MODULES_MANIFEST=${MODULES_MANIFEST:-$(rlocation "TEMPLATED_modules_manifest")}
+   "${node}" "${link_modules_script}" "${MODULES_MANIFEST:-}"
+ fi
+ 
