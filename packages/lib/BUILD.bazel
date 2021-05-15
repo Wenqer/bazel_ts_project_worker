@@ -12,15 +12,19 @@ js_library(
 
 ts_project(
     name = "tsc",
+    incremental = True,
     out_dir = "build",
     root_dir = "src",
     supports_workers = True,
+    ts_build_info_file = "build/tsconfig.tsbuildinfo",
     tsconfig = {
         "compilerOptions": {
+            "incremental": True,
             "declaration": True,
             "lib": ["ES5"],
             "skipLibCheck": True,
             "types": [],
+            "tsBuildInfoFile": "./build/tsconfig.tsbuildinfo",
             "noEmitOnError": True,
         },
     },
