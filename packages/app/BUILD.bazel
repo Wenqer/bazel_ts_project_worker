@@ -1,17 +1,7 @@
 load("@npm//@bazel/typescript:index.bzl", "ts_project")
-load("@build_bazel_rules_nodejs//:index.bzl", "js_library")
-
-package(default_visibility = ["//visibility:public"])
-
-js_library(
-    name = "lib",
-    package_name = "@monorepo/lib",
-    srcs = ["package.json"],
-    deps = [":tsc"],
-)
 
 ts_project(
-    name = "tsc",
+    name = "app",
     out_dir = "build",
     root_dir = "src",
     supports_workers = True,
@@ -25,6 +15,6 @@ ts_project(
         },
     },
     deps = [
-        "@npm//fp-ts",
+        "//packages/lib",
     ],
 )

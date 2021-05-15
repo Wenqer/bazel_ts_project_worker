@@ -5,7 +5,7 @@
     "generatechange:foo": "echo 'export const fooTime = '$(date +%s) > packages/lib/src/foo.ts",
     "generatechange:bar": "echo 'export const barTime = '$(date +%s) > packages/lib/src/bar.ts",
     "generatechange": "yarn generatechange:foo && yarn generatechange:bar",
-    "build": "bazel build packages/lib",
+    "build": "bazel build packages/app",
     "build:local": "yarn build && yarn generatechange && yarn build",
     "build:local-partial": "yarn build && yarn generatechange:foo && yarn build",
     "build:sandbox": "yarn build --worker_sandboxing && yarn generatechange && yarn build --worker_sandboxing && yarn generatechange && yarn build --worker_sandboxing",
