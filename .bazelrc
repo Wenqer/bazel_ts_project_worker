@@ -5,4 +5,4 @@
 build --symlink_prefix=dist/
 
 # enable verbose build errors output
-build --worker_verbose --verbose_failures --define=VERBOSE_LOGS=1
+build:debug --worker_verbose --verbose_failures --define=VERBOSE_LOGS=1
